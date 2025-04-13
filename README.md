@@ -7,17 +7,34 @@ To write a program to predict the type of species of the Iris flower using the S
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. pandas': For handling and analyzing data.
+2. 'load_iris': Loads the Iris dataset, a built-in dataset in scikit-learn.
+3. 'SGDClassifier': Implements Stochastic Gradient Descent (SGD) for classification.
+4. 'train_test_split': Splits the dataset into training and testing sets.
+5. 'accuracy_score', 'confusion_matrix', 'classification_report': Evaluate model performance.
+6. The Iris dataset is loaded.
+7. The dataset is converted into a pandas DataFrame with feature names as column labels.
+8. The target column (species labels: 0, 1, 2) is added.
+9. The first few rows are printed to inspect the data.
+10. 'x' (features): All columns except target.
+11. 'y' (target variable): The 'target' column containing class labels.
+12. 80% of the data is used for training ('x_train', 'y_train').
+13. 20% of the data is used for testing ('x_test', 'y_test').
+14. 'random_state=42' ensures reproducibility (same split every time).
+15. 'SGDClassifier' is initialized with: 'max_iter=1000': Runs up to 1000 iterations to optimize weights. 'tol=1e-3': Stops early if the loss improvement is below '0.001'.
+16.The classifier is trained on the training dataset using 'fit()'.
+17.The trained model predicts labels ('y_pred') for 'x_test' using 'predict()'.
+18.'accuracy_score(y_test, y_pred)' compares predictions with actual values.
+19.The accuracy (fraction of correct predictions) is printed.
+20.The Confusion Matrix is printed to analyze how many predictions were correct or misclassified.
+21.The Classification Report includes: Precision: How many positive predictions were actually correct? Recall: How many actual positives were correctly predicted? F1-score: Harmonic mean of precision and recall. Support: Number of actual occurrences of each class.
 
 ## Program:
 ```
 /*
 Program to implement the prediction of iris species using SGD Classifier.
-Developed by: 
-RegisterNumber:  
+Developed by: Meenakshi.R
+RegisterNumber: 212224220062 
 */
 ```
 ```
